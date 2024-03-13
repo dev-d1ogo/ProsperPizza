@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gestao-UI", "Gestao-UI", "{14D9E548-09E7-47A7-B60B-EB5F5F16CBD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{8F116DF4-DAA2-4C0E-95FF-2B9203C2E4DF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AlmoxerifadoInteligente", "Gestao-UI\BackEnd\AlmoxerifadoInteligente\AlmoxerifadoInteligente.csproj", "{B3ABF189-4831-4002-953E-4E39D39672B4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3ABF189-4831-4002-953E-4E39D39672B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3ABF189-4831-4002-953E-4E39D39672B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3ABF189-4831-4002-953E-4E39D39672B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3ABF189-4831-4002-953E-4E39D39672B4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8F116DF4-DAA2-4C0E-95FF-2B9203C2E4DF} = {14D9E548-09E7-47A7-B60B-EB5F5F16CBD7}
+		{B3ABF189-4831-4002-953E-4E39D39672B4} = {8F116DF4-DAA2-4C0E-95FF-2B9203C2E4DF}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9F16DE3A-CE2C-42CD-8E41-20F3D9D787A5}
+	EndGlobalSection
+EndGlobal
