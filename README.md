@@ -20,7 +20,7 @@ Aqui estão algumas capturas de tela das principais telas da aplicação:
 
 ### 1. Tela de Login
 
-![Tela de Login](screenshots/login.png)
+<img src="https://github.com/p4peldebala/ProsperPizza/assets/120611995/fd82b5f9-3bb5-457e-8019-d4e6a8cc408b"/> 
 
 Descrição: Esta tela permite que os usuários façam login em suas contas na pizzaria.
 
