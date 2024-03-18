@@ -20,37 +20,25 @@ Aqui estão algumas capturas de tela das principais telas da aplicação:
 
 ### 1. Tela de Login
 
-<img src="https://github.com/p4peldebala/ProsperPizza/assets/120611995/fd82b5f9-3bb5-457e-8019-d4e6a8cc408b"/> 
+<img src="https://github.com/p4peldebala/ProsperPizza/assets/120611995/2b2aa126-ac4d-4248-8ed9-56deaff65a7d"/> 
 
-Descrição: Esta tela permite que os usuários façam login em suas contas na pizzaria.
+Descrição: Esta tela permite que os usuários façam login ou se registrem na pizzaria.
 
 ### 2. Página Inicial (Home)
 
-![Página Inicial](screenshots/home.png)
+<img src="https://github.com/p4peldebala/ProsperPizza/assets/120611995/c7873683-76ef-4a3a-a2f6-30352f2beab7"/> 
 
-Descrição: A página inicial exibe uma seleção de pizzas deliciosas e opções de personalização.
+Descrição: A página inicial exibe uma seleção de pizzas deliciosas.
 
 ### 3. Página de Pedidos
 
-![Página de Pedidos](screenshots/orders.png)
+<img src="https://github.com/p4peldebala/ProsperPizza/assets/120611995/856e3822-ca21-45ba-abb1-fc7e6de52369"/> 
 
-Descrição: A página de pedidos mostra os pedidos atuais dos usuários e fornece opções para modificar ou cancelar pedidos.
+Descrição: A página de pedidos mostra os pedidos atuais dos usuários e fornece opções para adicionar ou remover pizzas.
 
 ### 4. Finalização do Pedido
 
-![Finalização do Pedido](screenshots/checkout.png)
+<img src="https://github.com/p4peldebala/ProsperPizza/assets/120611995/8996df93-a790-4c14-95a3-e4c04fe8dcfd"/> 
 
-Descrição: A finalização do pedido permite que os usuários revisem seus pedidos, escolham opções de entrega e façam o pagamento.
+Descrição: A finalização do pedido mostra o endereço e o tempo de entrega.
 
-## Instalação e Execução
-
-### Requisitos
-
-Antes de começar, você precisará ter o Node.js e o npm instalados em seu sistema. Você pode baixá-los e instalá-los a partir do site oficial: [Node.js](https://nodejs.org/).
-
-### Instalação
-
-1. Clone este repositório para o seu ambiente local:
-
-   ```bash
-   git clone https://github.com/seu-usuario/frontend-pizzaria.git
