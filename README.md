@@ -1,8 +1,6 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🍕 Frontend da Pizzaria 🍕
 
-## Getting Started
-
-First, run the development server:
+## Iniciando
 
 ```bash
 npm run dev
@@ -14,27 +12,45 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Bem-vindo à documentação do frontend da Prosper Pizzaria! Este frontend interage com a API de Pizzaria para fornecer uma interface amigável para os usuários.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+## Capturas de Tela
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+Aqui estão algumas capturas de tela das principais telas da aplicação:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### 1. Tela de Login
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![Tela de Login](screenshots/login.png)
 
-## Learn More
+Descrição: Esta tela permite que os usuários façam login em suas contas na pizzaria.
 
-To learn more about Next.js, take a look at the following resources:
+### 2. Página Inicial (Home)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Página Inicial](screenshots/home.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Descrição: A página inicial exibe uma seleção de pizzas deliciosas e opções de personalização.
 
-## Deploy on Vercel
+### 3. Página de Pedidos
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Página de Pedidos](screenshots/orders.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Descrição: A página de pedidos mostra os pedidos atuais dos usuários e fornece opções para modificar ou cancelar pedidos.
+
+### 4. Finalização do Pedido
+
+![Finalização do Pedido](screenshots/checkout.png)
+
+Descrição: A finalização do pedido permite que os usuários revisem seus pedidos, escolham opções de entrega e façam o pagamento.
+
+## Instalação e Execução
+
+### Requisitos
+
+Antes de começar, você precisará ter o Node.js e o npm instalados em seu sistema. Você pode baixá-los e instalá-los a partir do site oficial: [Node.js](https://nodejs.org/).
+
+### Instalação
+
+1. Clone este repositório para o seu ambiente local:
+
+   ```bash
+   git clone https://github.com/seu-usuario/frontend-pizzaria.git
