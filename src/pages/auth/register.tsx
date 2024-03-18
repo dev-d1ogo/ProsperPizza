@@ -2,7 +2,7 @@ import AuthLayout from "@/components/layouts/authLayout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import React from "react";
+import React, { useState } from "react";
 
 
 import * as zod from "zod";
@@ -11,7 +11,7 @@ import { zodResolver } from "@hookform/resolvers/zod"
 import { toast } from "sonner";
 import Head from "next/head";
 import Link from "next/link";
-import { useRouter } from "next/router";
+import { useRouter } from "next/navigation";
 import { signUp } from "@/myApi/signUp";
 import { useTheme } from "next-themes";
 
@@ -48,6 +48,7 @@ export default function index() {
   const router = useRouter();
   const { theme } = useTheme();
 
+
   const imagemEscura = "/images/dark/logoProsperDark.png";
   const imagemClara = "/images/light/logoProsperDefault.png";
 
@@ -61,15 +62,15 @@ export default function index() {
   } = useForm<FormProps>({
     resolver: zodResolver(RegisterSchema),
   });
-
+  
   const handleSignUp = async (data: FormProps) => {
     const { user, email, password } = data;
     try {
       await signUp({ password, user, email }); // Registrando User
-      router.push({
-        pathname: "/auth/signIn",
-        query: { user: user },
-      });
+      
+      console.log(user)
+
+       router.replace('/auth/signIn')
     } catch (error) {
       toast.error("Tente novamente!");
     }

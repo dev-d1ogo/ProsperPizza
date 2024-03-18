@@ -2,7 +2,7 @@ import AuthLayout from "@/components/layouts/authLayout";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 
 import logoImg from '../../../public/logoProsperDark.png'
@@ -17,7 +17,8 @@ import Head from "next/head";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { signIn } from "@/myApi/login";
-import Image from "next/image";
+import { useUser } from "@/context/UserContext";
+
 
 const LoginSchema = zod.object({
   user: zod.union([
@@ -30,6 +31,13 @@ const LoginSchema = zod.object({
 type FormProps = zod.infer<typeof LoginSchema>
 
 
+
+interface ResponseProps{
+  status: string,
+  message: string,
+  id: string
+}
+
 export default function index() {
   const router = useRouter()
   const { theme } = useTheme();
@@ -40,6 +48,8 @@ export default function index() {
   const image = theme === 'dark' ? imagemEscura : imagemClara
 
   const [searchParams, setSearchParams] = useState()
+
+  const {login, user:usuario} = useUser()
 
 
   const { register, handleSubmit, reset, watch} = useForm<FormProps>({
@@ -52,10 +62,17 @@ export default function index() {
   const handleSignIn = async (data:FormProps) =>{
     const {password, user } = data
     try {
-      await signIn({password, user})
-      window.location.href = ('/');
+        const response: ResponseProps = await signIn({ password, user })
+        const id = response.id
+        console.log(id)
+        await login(id)
+
+        console.log(usuario)
+
+        window.location.replace('/')
+
     } catch (error) {
-      toast.error('Usuário não encontrado')
+        toast.error('Usuário não encontrado')
     }
     reset()
   }

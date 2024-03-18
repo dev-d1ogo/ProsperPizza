@@ -2,7 +2,13 @@
 @tailwind components;
 @tailwind utilities;
  
+*{
+   font-family: "Poppins", sans-serif;
+}
 
+body, html{
+  width: 1005;
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
